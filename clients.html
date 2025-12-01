@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clients - Kisoro Real Estate</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo-container">
+    <img src="images/logo.png" alt="Kisoro Real Estate Logo" class="logo-img">
+    <span class="logo-text">Kisoro Real Estate</span>
+  </div>
+
+  <img src="images/hamburger.png" alt="Menu" class="hamburger" id="hamburger">
+  <nav class="nav-menu" id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="listings.html">Available Properties</a>
+    <a href="clients.html" class="active">Our Clients</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="page-banner">
+  <h1>Certified Clients</h1>
+</section>
+
+<section class="clients-section">
+  <div class="client-card fade">
+    <img src="images/client1.jpg" alt="">
+    <h3>John & Sarah</h3>
+    <p>Bought a 3-bedroom home in Kira</p>
+  </div>
+  <div class="client-card fade">
+    <img src="images/client2.jpg" alt="">
+    <h3>Mr. Mugisha</h3>
+    <p>Purchased 2 plots in Gayaza</p>
+  </div>
+  <div class="client-card fade">
+    <img src="images/client3.jpg" alt="">
+    <h3>Mr. & Mrs. Kato</h3>
+    <p>Purchased a 2-bedroom home in Bweyogerere</p>
+  </div>
+  <div class="client-card fade">
+    <img src="images/client4.jpg" alt="">
+    <h3>Ms. Achen</h3>
+    <p>Secured 1 plot in Mukono</p>
+  </div>
+  <div class="client-card fade">
+    <img src="images/client5.jpg" alt="">
+    <h3>Mr. & Mrs. Okello</h3>
+    <p>Bought a 3-bedroom house in Ntinda</p>
+  </div>
+  <div class="client-card fade">
+    <img src="images/client6.jpg" alt="">
+    <h3>Mr. Lule</h3>
+    <p>Purchased 2 plots in Kira</p>
+  </div>
+  <!-- Add more client cards similarly -->
+</section>
+</main>
+
+<footer>
+  <p>© 2025 Kisoro Real Estate</p>
+</footer>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('navMenu');
+hamburger.addEventListener('click', () => {
+  navMenu.style.display = navMenu.style.display === "flex" ? "none" : "flex";
+});
+</script>
+
+</body>
+</html>
