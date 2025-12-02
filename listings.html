@@ -3,98 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Available Properties - Kisoro Real Estate</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Kisoro Real Estate</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
   <div class="logo-container">
-    <img src="image-2.png" alt="Kisoro Real Estate Logo" class="logo-img">
+    <img src="images/image-4.png" alt="Kisoro Real Estate Logo" class="logo-img">
     <span class="logo-text">Kisoro Real Estate</span>
   </div>
 
-  <img src="transparent-hd-white-menu-burger-icon-701751695037039ulxnzxwywi.png" alt="Menu" class="hamburger" id="hamburger">
+  <img src="images/transparent-hd-white-menu-burger-icon-701751695037039ulxnzxwywi.png" alt="Menu" class="hamburger" id="hamburger">
+
   <nav class="nav-menu" id="navMenu">
-    <a href="index.html">Home</a>
+    <a href="index.html" class="active">Home</a>
     <a href="about.html">About</a>
-    <a href="listings.html" class="active">Available Properties</a>
-    <a href="clients.html">Our Clients</a>
+    <a href="listings.html"> Properties</a>
+    <a href="clients.html">Our Certificates</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
 
 <main>
-<section class="page-banner">
-  <h1>Available Properties</h1>
+<section class="hero">
+  <h1>Your Trusted Partner in Land & Housing</h1>
+  <p>Secure your dream land or home with full transparency and certified ownership.</p>
+  <a href="listings.html" class="btn">View Properties</a>
 </section>
 
-<section class="gallery">
+<section class="features">
+  <div class="feature-box fade">
+    <h3>Certified Land</h3>
+    <p>All our plots come with valid land titles verified by authorities.</p>
+  </div>
 
-  <!-- 30 property placeholders -->
-  <div class="property-card fade">
-    <img src="IMG-20251201-WA0021.jpg" alt="House 1">
-    <h3>3 Bedroom House – Kira</h3>
-    
+  <div class="feature-box fade">
+    <h3>Affordable Prices</h3>
+    <p>We provide flexible payment plans tailored to your needs.</p>
   </div>
-  <div class="property-card fade">
-    <img src="IMG-20251201-WA0030.jpg" alt="House 2">
-    <h3>4 Bedroom House – Bukoto</h3>
-    
+
+  <div class="feature-box fade">
+    <h3>Professional Agents</h3>
+    <p>Our team guides you through the entire process with honesty and transparency.</p>
   </div>
-  <div class="property-card fade">
-    <img src="home.jpg" alt="Plot 1">
-    <h3>50x100 Plot – Gayaza</h3>
-    
-  </div>
-  <div class="property-card fade">
-    <img src="IMG-20251201-WA0015.jpg" alt="Plot 2">
-    <h3>60x100 Plot – Ntinda</h3>
-    
-  </div>
-  <div class="property-card fade">
-    <img src="IMG-20251201-WA0038.jpg" alt="House 3">
-    <h3>2 Bedroom House – Luzira</h3>
-    
-  </div>
-  <!--<div class="property-card fade">
-    <img src="images/house4.jpg" alt="House 4">
-    <h3>5 Bedroom House – Muyenga</h3>
-    <p>UGX 450,000,000</p>
-  </div>
-  <div class="property-card fade">
-    <img src="images/plot3.jpg" alt="Plot 3">
-    <h3>45x100 Plot – Bweyogerere</h3>
-    <p>UGX 20,000,000</p>
-  </div>
-  <div class="property-card fade">
-    <img src="images/house5.jpg" alt="House 5">
-    <h3>3 Bedroom House – Naguru</h3>
-    <p>UGX 280,000,000</p>
-  </div>
-  <div class="property-card fade">
-    <img src="images/plot4.jpg" alt="Plot 4">
-    <h3>55x120 Plot – Nsambya</h3>
-    <p>UGX 22,000,000</p>
-  </div>
-  <div class="property-card fade">
-    <img src="images/house6.jpg" alt="House 6">
-    <h3>4 Bedroom House – Mbuya</h3>
-    <p>UGX 360,000,000</p>
-  </div>-->
-  <!-- Add 20 more placeholders in the same format -->
 </section>
 </main>
 
 <footer>
-  <p>© 2025 Kisoro Real Estate</p>
+  <p>© 2025 Kisoro Real Estate | +256 707776895</p>
 </footer>
 
 <script>
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('navMenu');
+
 hamburger.addEventListener('click', () => {
-  navMenu.style.display = navMenu.style.display === "flex" ? "none" : "flex";
+  if(navMenu.style.display === "flex"){
+    navMenu.style.display = "none";
+  } else {
+    navMenu.style.display = "flex";
+  }
 });
 </script>
 
